@@ -1,0 +1,239 @@
+/* debut du parametre generale */
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+body{
+  background-color: #141414;
+  
+}
+.conteneur {
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* les peites appareils */
+@media screen and (min-width: 768px) {
+  .conteneur {
+    width: 750px;
+  }
+}
+
+/* les moyennes appareils */
+@media screen and (min-width: 992px) {
+  .conteneur {
+    width: 970px;
+  }
+}
+
+/* les grandes appareils */
+@media screen and (min-width: 1200px) {
+  .conteneur {
+    width: 1170px;
+  }
+}
+/* fin de parametre generale */
+
+/* barre de navigation */
+nav{
+  padding: 15px;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  background-color: #1a1a1a;
+}
+nav .conteneur{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+nav .conteneur ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 25px;
+}
+nav .conteneur .liens-1{
+  margin-right: 200px;
+  display: flex;
+}
+nav .conteneur .liens-1 li{
+  position: relative;
+}
+nav .conteneur .liens-1 a::after{
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 0px;
+  background-color: rgb(255, 255, 255, 0.7);
+  right: 0;
+  transition: width 0.5s;
+}
+nav .conteneur .liens-1 li:hover a::after{
+  width: 95px;
+}
+nav .conteneur .liens-1 a::before{
+  position: absolute;
+  content: "";
+  
+  height: 2px;
+  width: 0px;
+  background-color: rgb(255, 255, 255, 0.7);
+  bottom: 0;
+  transition: width 0.5s;
+}
+nav .conteneur .liens-1 li:hover a::before{
+  width: 95px;
+}
+nav .conteneur .liens-1 li a{
+  display: inline-block;
+}
+nav .conteneur .liens-1 li a:link, a:visited{
+  text-decoration: none;
+  color: #fff;
+  margin-left: 35px;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+nav .conteneur .liens-1 li a:hover{
+  color: rgb(255, 255, 255, 0.7);
+}
+nav .conteneur .liens-2{
+  margin-left: 200px;
+  display: flex;
+  align-items: center;
+}
+nav .conteneur .liens-2 li a{
+  text-decoration: none;
+  color: #8f8f8f;
+  margin-right: 35px;
+  font-size: 17px;
+  transition: color 0.3s;
+}
+nav .conteneur .liens-2 li a:hover{
+  color: rgb(128, 128, 128, 0.7);
+}
+nav .conteneur .liens-2 li button{
+  border: none;
+  padding: 8px 20px;
+  font-size: 17px;
+  background-color: #f54266;
+  transition: background-color 1s, color 1s;
+  color: #fff;
+  cursor: pointer;
+}
+nav .conteneur .liens-2 li button:hover{
+  background-color: red;
+  color: inherit;
+}
+
+@media screen and (max-width: 1200px){
+  nav .conteneur .liens-1{
+    margin-right: 100px;
+  }
+  nav .conteneur .liens-2{
+    margin-left: 100px;
+  }
+}
+@media screen and (max-width: 991px){
+  nav .conteneur .liens-1{
+    margin-right: 0px;
+  }
+  nav .conteneur .liens-1 li:first-child a:first-child{
+    margin-left: 10px;
+  }
+  nav .conteneur .liens-2{
+    margin-left: 0px;
+  }
+}
+@media screen and (max-width:768px){
+  nav .conteneur .liens-1{
+    display: none;
+  }
+  nav .conteneur .liens-2 li a:link, a:visited{
+    margin-right: 15px; 
+  }
+}
+ /* barre de navigtion */
+
+ /* header */
+ header{
+  padding: 15px;
+  width: 100%;
+  color: #fff;
+  height: calc(100vh - 90.55px);
+  background-image: url('https://officialpsds.com/imageview/rn/62/rn6205_large.png?1521316483');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+header h1{
+  text-align: center;
+}
+@media screen and (max-width:768px){
+  header{
+    background-size: 400px;
+  }
+  header h1{
+    font-size: 37px;
+    max-width: 500px;
+  }
+}
+@media screen and (max-width:408px){
+  header{
+    background-size: 350px;
+  }
+  header h1{
+    font-size: 30px;
+    max-width: 500px;
+  }
+}
+/* ./header */
+
+/* footer */
+footer{
+  padding: 15px;
+  color: #8f8f8f;
+  background-color: #1a1a1a;
+}
+footer .conteneur .footer{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  width: 100%;
+}
+footer .conteneur .footer .footer-contenu{
+  width: 25%;
+  padding: 10px 10px 10px 0;
+  margin: 0px 7px 0px 0px ;
+}
+@media screen and (max-width:992px){
+  footer{
+    font-size: 25px;
+  }
+  footer .conteneur .footer .footer-contenu{
+    width: auto;
+    padding: 10px 10px 10px 10px;
+    margin: 0px 0px 7px 0px ;
+  }
+  footer .conteneur .footer{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .conteneur > p{
+    text-align: center;
+  }
+}
+@media screen and (max-width:600px){
+  footer{
+    font-size: 17px;
+  }
+}

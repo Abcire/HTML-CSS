@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- BOOSTRAP-CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- BOOSTRAP-js -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- css normalizer -->
+    <link rel="stylesheet" href="CSS/normlize.css">
+    <!-- css font awesome -->
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <!-- style css -->
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/icons8-portfolio-64.png" type="image/x-icon"><link rel="stylesheet" href="CSS/test_style.css">
+    <title>Portfolio</title>
+    
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav data-aos="fade-right">
+        <input type="checkbox" id="check">
+        <div class="img-perso"><img src="images/Mounir_2.jpg" alt=""></div>
+        <ul>
+            <li><span><i class="fa-solid fa-house"></i></span><a href="#home">home</a></li>
+            <li><span><i class="fa-solid fa-user"></i></span><a href="#about">about </a></li>
+            <li><span><i class="fa-solid fa-bars-staggered"></i></span><a href="#services">services</a></li>
+            <li><span><i class="fa-solid fa-briefcase"></i></span><a href="#portfolio">portfolio</a></li>
+            <li><span><i class="fa-solid fa-address-card"></i></span><a href="#contact">contact </a></li>            
+        </ul>
+        <div class="bars-menu">
+            <label for="check">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+        </div>
+    </nav>
+
+    <section class="contenu">
+
+        <!-- 2/ la tete de la page -->
+        <header id=home>
+            <h1>welcome to my <span>portfolio</span></h1>
+            <div class="cercle">
+                <img src="Images/Mounir_2.jpg" alt="Ma photo">
+            </div>
+        </header>
+        
+        <!-- About me -->
+        <section id="about" class="about">
+            <h2>about <span>me</span></h2>
+            <div class="presentation">
+                <h3>hello i am <span class="nom">abcire</span> <span class="prenom">mounir</span> and <span>web devlopper</span></h3>
+                <p><span>L</span>orem ipsum dolor sit amet consectetur adipisicing elit. Quod tempora, quasi dolor sapiente perferendis minus dolores voluptates illum accusantium esse, fugiat earum mollitia quibusdam obcaecati quisquam natus! Voluptatum, nostrum suscipit.</p>
+            </div>
+            <div class="row info">
+                <div class="block1 col-lg-5 col-md-5 col-sm-5 col-xs-12 info-perso">
+                    <p><span>first name :</span> abcire</p>
+                    <p><span>last name :</span> mounir</p>
+                    <p><span>age :</span> 18</p>
+                    <p><span>country :</span> algeria</p>
+                </div>
+                <div class="block2 col-lg-5 col-md-5 col-sm-5 col-xs-12 info-languages">
+                    <p><span>city :</span> oran</p>
+                    <p><span>arabe :</span> native language</p>
+                    <p><span>french :</span> 50%</p>
+                    <p><span>english :</span> 25%</p>
+                </div>
+                <div class="block3 col-lg-12 col-md-12 col-sm-12 col-xs-12 info-lang-programmation">
+                    <div class="html">
+                        <div>HTML 85%</div>
+                    </div>
+                    <div class="css">
+                        <div >CSS 75%</div>
+                    </div>
+                    <div class="boostrap">
+                        <div >BOOSTRAP STUDIO 55%</div>
+                    </div>
+                    <div class="php">
+                        <div >PHP (LEARNING)</div>
+                    </div>
+                    <div class="mysql">
+                        <div >MYSQL (LEARNING)</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4/ services -->
+        <section id="services" class="services">
+            <h2>services</h2>
+            <div class="row services-contenu">
+                <div class="block bl1 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <h3>web devlopper</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quidem sapiente consequuntur enim repellendus dolore rem ad in vel totam veritatis quos nam asperiores commodi, quo et qui iusto eos!</p>
+                </div>
+                <div class="block bl2 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <h3>static website</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quidem sapiente consequuntur enim repellendus dolore rem ad in vel totam veritatis quos nam asperiores commodi, quo et qui iusto eos!</p>
+                </div>
+                <div class="block bl3 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <h3>dynamic websit</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quidem sapiente consequuntur enim repellendus dolore rem ad in vel totam veritatis quos nam asperiores commodi, quo et qui iusto eos!</p>
+                </div>
+                <div class="block bl4 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <h3>landing page</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quidem sapiente consequuntur enim repellendus dolore rem ad in vel totam veritatis quos nam asperiores commodi, quo et qui iusto eos!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5/ portfolio -->
+        <section id="portfolio" class="portfolio">
+            <h2>portfolio</h2>
+            <div class="portfolio-contenu row">
+                <div class="block b1 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <h3>foody-restaurant</h3>
+                    <div class="webSite">
+                        <a href="https://restaurant-foody.netlify.app" target="_blank" title="click">
+                            <img src="Images/foody.png" alt="foody website">
+                        </a>  
+                    </div>
+                </div>
+                <div class="block b2 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <h3>burger</h3>
+                    <div class="webSite">
+                        <a href="https://mon-burger.netlify.app" target="_blank" title="click">
+                            <img src="Images/burger.png" alt="burger website">
+                        </a>
+                    </div>
+                </div>
+                <div class="block col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <h3>web site modern</h3>
+                    <div class="webSite">
+                        <a href="https://site-moderne.netlify.app" target="_blank" title="click">
+                            <img src="images/Site moderne.png" alt="web site modern">
+                        </a>
+                    </div>
+                </div>
+                <div class="block col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <h3>landing page</h3>
+                    <div class="webSite">
+                        <a href="https://website-23.netlify.app" target="_blank" title="click">
+                            <img src="images/web site.png" alt="landing page">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>     
+        
+        <!-- CONTACT -->
+        <section id="contact" class="contact">
+            <div class="bcg-flew">
+                <h2 data-aos="slide-right">contact</h2>
+                <div class="grp-icons" data-aos="slide-left">
+                    <div class="icons fb">
+                        <h3>facbook</h3>
+                        <a href="https://www.facebook.com/mounir.abcire/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                    <div class="icons inst">
+                        <h3>instagram</h3>
+                        <a href="https://www.instagram.com/mounirmounirou6547/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <div class="icons what">
+                        <h3>whatsapp</h3>
+                        <a href="https://api.whatsapp.com/send/?phone=%2B2130775383308&text&app_absent=0" target="_blank" title="+2130775383308"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                    <div class="icons mail">
+                        <h3>gmail</h3>
+                        <a href="mailto:abciremounir47@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                        
+                </div>
+            </div>
+        </section>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+        duration: 3000,
+        once: true,
+        });
+    </script>
+</body>
+</html>

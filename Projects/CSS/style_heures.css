@@ -1,0 +1,118 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+body::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, #00ccff 50%, #cc0099 50%);
+    z-index: 10;
+    pointer-events: none;
+    mix-blend-mode: multiply;
+}
+.conteneur .cercle{
+    background-color: #ffffff0d;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 0.5px#fff,  0 0 30px 5px #fff,  0 0 350px 15px #fff;
+    padding: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.conteneur .cercle .nbr{
+    text-shadow: 2px 2px 5px  #fff;
+    position: absolute;
+}
+.conteneur .cercle .nbr:first-child{
+    top: 10px;
+    font-size: 25px;
+}
+.conteneur .cercle .nbr:nth-child(2){
+    right: 10px;
+    font-size: 25px;
+}
+.conteneur .cercle .nbr:nth-child(3){
+    bottom: 10px;
+    font-size: 25px;
+}
+.conteneur .cercle .nbr:nth-child(4){
+    left: 10px;
+    font-size: 25px;
+}
+.conteneur .cercle .point{
+    border: 1px solid rgba(5, 163, 0, 0.671);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.conteneur .cercle .point::after{
+    content: '';
+    width: 2px;
+    height: 250px;
+    background: linear-gradient(to bottom, #ffffff 50%, transparent 50%);
+    position: absolute;
+    top: -125px;
+    animation: minutes 3600s linear 0s infinite;
+}
+@keyframes minutes{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+
+.conteneur .cercle .point .point_2::before{
+    content: '';
+    width: 1px;
+    height: 200px;
+    background: linear-gradient(to bottom, #fff 50%, transparent 50%);
+    position: absolute;
+    z-index: 1;
+    top: -100px;
+    animation: secondes 60s linear 0s infinite;
+}
+@keyframes secondes{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+.conteneur .cercle .point::before{
+    content: '';
+    width: 2px;
+    height: 125px;
+    background: linear-gradient(to bottom, #ffffff 50%, transparent 50%);
+    position: absolute;
+    z-index: 2;
+    top: -62.5px;
+    animation: heures 43200s linear 0s infinite;
+}
+@keyframes heures{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
